@@ -1,8 +1,8 @@
 ---
 layout: null
 ---
-{% if site.active_lang == "zh" %}
-  {{ site.data.zh.toc | jsonify }}
-{% else %}
+{% if site.active_lang == site.default_lang %}
   {{ site.data.toc | jsonify }}
+{% else %}
+  {{ site.data[site.active_lang].toc | jsonify }}
 {% endif %}

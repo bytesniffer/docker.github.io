@@ -4,7 +4,7 @@ horizontalnav:
 #  path: /
 #  node: home
 - title: Guides
-  path: /get-started/overview/
+  path: /en/get-started/overview/
   node: guides
 #- title: Product manuals
 #  path: /engine/
@@ -22,9 +22,9 @@ home: {}
 
 guides:
 - title: Docker
-  path: /get-started/overview/
+  path: /en/get-started/overview/
 - title: Get Docker
-  path: /get-docker/
+  path: /en/get-docker/
 - sectiontitle: Get started
   section:
     - title: "Part 1: Getting started"

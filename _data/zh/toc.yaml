@@ -22,15 +22,15 @@ home: {}
 
 guides:
 - title: Docker 概述
-  path: /zh/get-started/overview/
+  path: /get-started/overview/
 - title: Docker 安装
-  path: /zh/get-docker/
+  path: /get-docker/
 - sectiontitle: Docker 入门
   section:
     - title: "Part 1: Getting started"
-      path: /zh/get-started/
+      path: /get-started/
     - title: "Part 2: Our Application"
-      path: /zh/get-started/02_our_app/
+      path: /get-started/02_our_app/
     - title: "Part 3: Updating our Application"
       path: /get-started/03_updating_app/
     - title: "Part 4: Sharing Our Application"
