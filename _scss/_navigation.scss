@@ -292,3 +292,10 @@ input:checked+.slider:before {
     float: left;
     margin: 2px 0 0;
 }
+
+.ctrl-right>a,
+.ctrl-right>a:focus,
+.ctrl-right>a:hover {
+    color: #fff;
+    padding: 0 5px;
+}

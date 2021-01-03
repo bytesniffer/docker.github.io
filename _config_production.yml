@@ -18,6 +18,12 @@ plugins:
   - jekyll-redirect-from
   - jekyll-relative-links
   - jekyll-sitemap
+  - jekyll-multiple-languages-plugin
+
+# jekyll-multiple-languages-plugin settings:
+languages: ["zh", "en"]
+
+exclude_from_localizations: ["javascript", "images", "css", "js", "favicon.ico"]
 
 # Assets
 #

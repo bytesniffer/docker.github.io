@@ -6,7 +6,10 @@ redirect_from:
 - /engine/userguide/basics/
 - /engine/introduction/understanding-docker/
 - /engine/understanding-docker/
-- /engine/docker-overview/
+- /engine/docker-overview/ 
+
+permalink: get-started/overview/
+lang: en
 title: Docker overview
 ---
 

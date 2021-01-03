@@ -19,6 +19,9 @@
                         <section class="section">
                             {%- if page.title -%}
                             <h1>{{ page.title }}</h1>
+
+                            <h1>{{ mulit.page.title }}</h1>
+
                             {%- endif -%}
                             {%- if page.advisory -%}
                             <blockquote>{{ site.data.advisories.texts[page.advisory] | markdownify }}</blockquote>
@@ -84,7 +87,7 @@
     <footer class="footer">
         {% include footer.html %}
     </footer>
-    <script>const pageURL = "{{ page.url }}";</script>
+    <script>const pageURL = "{% if site.default_lang != site.active_lang %}/{{ page.url | prepend: site.active_lang}}{% else %}{{ page.url}}{% endif %}";</script>
     {%- if jekyll.environment == 'production' -%}{%- include analytics/polldaddy.html -%}{%- endif -%}
 </body>
 </html>

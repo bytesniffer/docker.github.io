@@ -12,7 +12,7 @@ kramdown:
   hard_wrap: false
   syntax_highlighter: rouge
   toc_levels: 2..3
-incremental: true
+incremental: false
 permalink: pretty
 safe: false
 lsi: false
@@ -34,6 +34,21 @@ distribution_version: "2.7"
 plugins:
   - jekyll-redirect-from
   - jekyll-relative-links
+#  - jekyll-multiple-languages-plugin
+  - jekyll-polyglot
+
+
+collections:
+  posts:
+    output:   true
+
+#include: ['_posts']
+# jekyll-multiple-languages-plugin settings:
+languages: ["en","zh"]
+default_lang: "en"
+exclude_from_localization: ["javascript" ,"images", "css", "scripts", "favicon.ico"]
+parallel_localization: true
+
 
 # Assets
 #

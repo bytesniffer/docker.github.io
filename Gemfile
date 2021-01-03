@@ -40,4 +40,6 @@ source "https://rubygems.org"
 # branch.
 
 gem "github-pages", "198"
+gem "jekyll-multiple-languages-plugin"
+gem "jekyll-polyglot"
 gem 'wdm' if Gem.win_platform?

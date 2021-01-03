@@ -1,27 +1,27 @@
 
 horizontalnav:
-- title: Home
-  path: /
-  node: home
+#- title: Home
+#  path: /
+#  node: home
 - title: Guides
   path: /get-started/overview/
   node: guides
-- title: Product manuals
-  path: /engine/
-  node: manuals
-- title: Reference
-  path: /reference/
-  node: reference
-- title: Samples
-  path: /samples/
-  node: samples
-  # TODO unify navbbar links: homepage currently has a custom "articles" link
-  hide_home: true
+#- title: Product manuals
+#  path: /engine/
+#  node: manuals
+#- title: Reference
+#  path: /reference/
+#  node: reference
+#- title: Samples
+#  path: /samples/
+#  node: samples
+#  # TODO unify navbar links: homepage currently has a custom "articles" link
+#  hide_home: true
 
 home: {}
 
 guides:
-- title: Docker overview
+- title: Docker
   path: /get-started/overview/
 - title: Get Docker
   path: /get-docker/

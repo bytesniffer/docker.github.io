@@ -61,8 +61,8 @@ function walkTree(tree) {
     }
 }
 
-function renderNav() {
-    getJSON( "/js/toc.json", function( data ) {
+function renderNav(lang) {
+    getJSON(lang ?'/'+ lang + "/js/toc.json" : "/js/toc.json", function( data ) {
         for (const item of data.horizontalnav) {
             if (item.path === pageURL || pageIsInSection(data[item.node])) {
                 // This is the current section. Set the corresponding header-nav link
@@ -206,7 +206,8 @@ function initNavToggle() {
 }
 
 ready(() => {
-    renderNav()
+    console.log(document.getElementById("curLang").innerText)
+    renderNav(document.getElementById("curLang").innerText)
     initNavToggle()
     $('[data-toggle="tooltip"]').tooltip()
 
